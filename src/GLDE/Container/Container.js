@@ -70,6 +70,11 @@ class Container {
         return this.$search(query);
     }
 
+    getAll(){
+        var result = this.$content;
+        return result;
+    }
+
 }
 
 export default Container;

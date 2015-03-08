@@ -88,4 +88,12 @@ describe('Container', function(){
         });
     });
 
+    describe('.getAll()', function(){
+        it('should return all items from container', function(){
+            var content = [1,2,3,4,5];
+            c.$content = content;
+            expect(c.getAll()).toEqual([1,2,3,4,5]);
+        });
+    });
+
 });
